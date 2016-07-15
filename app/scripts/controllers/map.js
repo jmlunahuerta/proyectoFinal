@@ -8,10 +8,12 @@
  * Controller of the proyectoFinalApp
  */
 angular.module('proyectoFinalApp')
-  .controller('MapCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MapCtrl', function ($scope) {
+    $scope.map = {
+    	 center: {
+              latitude: 37.389092,
+              longitude: -5.984459
+            },
+            zoom: 14
+    }
   });
