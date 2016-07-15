@@ -1,0 +1,15 @@
+   <div id="view-map"></div>
+    <script>
+      var map;
+      function initMap() {
+        // Constructor creates a new map - only center and zoom are required.
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 37.389092, lng: -5.984459},
+          zoom: 13
+        });
+      }
+    </script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7LLKzKUR76zMgJ2oICgeM86V_H5dnArM&v=3&callback=initMap">
+    </script>
